@@ -1,0 +1,98 @@
+/* Align and Container Styling */
+.align {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #2b2b2b; /* Dark theme background */
+}
+
+/* Heading Style */
+h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid Container for User List */
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* User Entry and Delete Button Styling */
+.user-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-entry span {
+    color: #fff;
+    font-weight: bold;
+}
+
+.delete-button {
+    padding: 8px 16px;
+    background-color: #ea4c88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #d44179;
+}
+
+/* Button Styling */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #ea4c88;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d44179;
+}
+
+/* Error Message Styling */
+.error {
+    color: red;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .buttonContainer {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
